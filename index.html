@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        
+        <title>Lista de precios</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="./styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    </head>
+
+    <button id="botonLightMode" class="btn btn-light">Light Mode</button>
+    <button id="botonDarkMode" class="btn btn-dark">Dark Mode</button>
+    <button id="botonAlerta" class="btn btn-outline-dark" type="submit"> <i class="bi-cart-fill me-1"></i>
+        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>Carrito</button><br><br>
+    <div id="divProductos" class="row"></div>
+
+    
+    <div class="row" id="divProduct"></div>
+
+    <script src="carrito.js"></script>
+
+    <body id="precios">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!"><h3>Lista de Precios</h3></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item fs-5"><a class="nav-link active" aria-current="page" href="../index.html">Principal</a></li>
+                        <li class="nav-item ps-3 fs-5"><a class="nav-link" href="./Nuestros-productos.html">Productos</a></li>
+                        <li class="nav-item ps-3 fs-5"><a class="nav-link" href="./lista-de-precios.html">Precios</a></li>
+                        <li class="nav-item ps-3 fs-5"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                        <li class="nav-item ps-3 fs-5"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                        <li class="nav-item dropdown fs-5">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">Todos los productos</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Los mas populares</a></li>
+                                <li><a class="dropdown-item" href="#!">Agregados Recientemente</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-7 fw-bolder">Productos</h1>
+                    <p class="lead fw-normal text-white-50 mb-0"></p>
+                </div>
+            </div>
+        </header> 
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/aral 8.jpg" alt="..." />
+                            <!-- Product details-->
+                          <h3 class="text-center mt-5"></h3>
+                            <div class="card-body p-5">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder mt-4"> Igloo Waterdog Aral 8 personas</h5>
+
+                                    <!-- Product price-->
+                                    $15.600
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al Carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Destacado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/bolsa nat geo.jpg" alt="..." />
+                            <!-- Product details-->
+                          
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Bolsa de dormir Nat Geo climb -10º</h5>
+                    
+                                    <!-- Product price-->
+                             
+                                    $13.700
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Destacado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/conser coleman.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Conservadora coleman</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$15.000</span>
+                                    $12.800
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/farol lexus.webp" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Linterna Farol Lexus Led USB</h5>
+                                
+                                    <!-- Product price-->
+                                    $1.800
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Destacado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/moch doite.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Mochila Doite Leonera 40L</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    $23.000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/nature-pro.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Igloo Nature pro Waterdog 6 personas</h5>
+                                    <!-- Product price-->
+                                    $65.000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/bolsa-hidratacion.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Bolsa de hidratacion 2 litros Weis</h5>
+                                    <!-- Product price-->
+                                    $4.300
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/colchon-inflable.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Colchon inflable spinit 2 plazas</h5>
+                                    <!-- Product price-->
+                                    $6.500
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/guantes.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Guantes para pesca Kunnan UV</h5>
+                                    <!-- Product price-->
+                                    $3.500
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/expo 300.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Gazebo Expo 300 autoarmable Waterdog</h5>
+                                    <!-- Product price-->
+                                    $120.000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Destacado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/reel.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Reel shimano sx 4 rulemanes</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                            
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$12.000</span>
+                                    $9.000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="../img1/silla.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Silla de camping Academy Plegable</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center mb-2">
+                                
+                                    <!-- Product price-->
+                                    $4.600
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-1 pt-5 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Footer-->
+    
+        
+           
+                <footer class="py-5 bg-dark">
+                    <ul class="pagination d-flex justify-content-center">
+                        <li class="page-item"><a class="page-link" href="./Nuestros-productos.html">Anterior</a></li>
+                        <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="./Nuestros-productos.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="./lista-de-precios.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="./servicios.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="./contacto.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="./servicios.html">Siguiente</a></li>
+                    </ul>
+                 </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+
+       <script src="./libreria/sweetalert2.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
